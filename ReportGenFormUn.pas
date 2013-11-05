@@ -86,8 +86,8 @@ uses
   Windows, Classes, Controls, SysUtils, Forms, StdCtrls, ExtCtrls, Dialogs, Graphics,
   DB, DBTables,  ppComm, ppCache, ppClass, ppProd, ppReport, ppRptExp, ppBands,
   ppDBBDE, ppEndUsr, ppDBPipe, ppDB, ppPrnabl, ppStrtch, ppDsgnDB,
-  ppRelatv, ppModule, ppViewr, ppForms, ppFormWrapper, DBXpress, SqlExpr,
-  DBClient, SimpleDS, daDataModule, daDBExpress, ppRichTx{, ppWWRichEd};
+  ppRelatv, ppModule, ppViewr, ppForms, ppFormWrapper, ppWWRichEd, Data.DbxFirebird, SqlExpr,
+  DBClient, SimpleDS, daDataModule, daDBExpress, Data.DBXInterBase, ppParameter, ppRichTx, ppDesignLayer;
 
 type
 
@@ -164,6 +164,8 @@ type
     Shape32: TShape;
     Shape33: TShape;
     ppRichText1: TppRichText;
+    ppDesignLayers1: TppDesignLayers;
+    ppDesignLayer1: TppDesignLayer;
     procedure FormCreate(Sender: TObject);
     procedure btnLaunchClick(Sender: TObject);
     procedure ReportPreviewFormCreate(Sender: TObject);
